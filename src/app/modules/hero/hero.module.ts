@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
-import {SelectedHeroComponent} from './components/selected-hero/selected-hero.component';
 import {CommonModule} from '@angular/common';
+import {SelectedHeroComponent} from './components/selected-hero/selected-hero.component';
 
 @NgModule({
     imports: [
@@ -9,5 +9,8 @@ import {CommonModule} from '@angular/common';
     declarations: [
         SelectedHeroComponent
     ],
+    exports: [
+        SelectedHeroComponent,
+    ]
 })
 export class HeroModule {}
